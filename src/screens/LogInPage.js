@@ -42,78 +42,6 @@ const LogInPage = ({navigation}) => {
   );
 };
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: "center",
-//   },
-//   backButton:{
-//     flexDirection:'row',
-//   },
-//   back:{
-//     fontSize: 17,
-//   },
-//   env2:{
-//     alignSelf: 'center',
-//     height: 250,
-//     width: 300,
-//   },
-//   heading: {
-//     fontSize: 40,
-//     color: "#07411B",
-//     alignSelf: "center",
-//   },
-//   inputWrapper: {
-//     alignItems: "center",
-//     marginLeft: 50,
-//     marginTop: 40,
-//   },
-//   inpText: {
-//     color: "#34572F",
-//     fontSize: 15,
-//     alignSelf: "flex-start",
-//     marginTop: 14,
-//   },
-//   input: {
-//     backgroundColor: "#066B53",
-//     width: 250,
-//     alignSelf: "flex-start",
-//     height: 35,
-//     borderRadius: 10,
-//     marginTop: 8,
-//     paddingHorizontal: 15,
-//     paddingVertical: 5,
-//   },
-//   buttonWrapper: {
-//     alignItems: "center",
-//     marginTop: 40,
-//   },
-//   appButtonContainer1: {
-//     backgroundColor: "#07411B",
-//     paddingHorizontal: 10,
-//     paddingVertical: 12,
-//     borderRadius: 10,
-//     width: 250,
-//   },
-//   appButtonText: {
-//     color: "white",
-//     alignSelf: "center",
-//     fontWeight: "bold",
-//   },
-//   loginOption:{
-//     flexDirection: 'row',
-//   },
-//   logInText: {
-//     alignSelf: "center",
-//     marginTop: 25,
-//     fontSize: 15,
-//     marginBottom: 25,
-//   },
-//   login: {
-//     alignSelf: "center",
-//   },
-// });
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -175,15 +103,14 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: "#D0E7D2",
-    width: 280,
-    // height:40,
+    width: 250,
     alignSelf:"center",
-    height: 40,
+    height: 45,
     borderRadius: 10,
     marginTop: 8,
     paddingHorizontal: 15,
     paddingVertical: 5,
-    marginBottom:3
+    marginBottom:12,
   },
   buttonWrapper: {
     alignItems: "center",
@@ -194,7 +121,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 12,
     borderRadius: 10,
-    width: 250,
+    width: 150,
   },
   appButtonText: {
     color: "white",

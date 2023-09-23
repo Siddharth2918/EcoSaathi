@@ -24,9 +24,9 @@ const ProfilePage = () => {
         <View style={[styles.profileView, styles.shadowProp]}>
             <Image
                 style={styles.profileimage}
-                source={require("../../assets/google.png")}
+                source={require("../../assets/ria.png")}
             />
-          <Text style={styles.personName}>Riya Oberoi</Text>
+          <Text style={styles.personName}>Ria Pahujani</Text>
           <Text style={styles.personLocation}>Dehradun, Uttrakhand</Text>
         </View>
       </View>
@@ -47,7 +47,6 @@ const ProfilePage = () => {
       </View>
       <View style={styles.points}>
         <Text style={styles.pointHeading}>Points:  {points}</Text>
-        {/* <Text style={styles.pointNumber}>32</Text> */}
         <TouchableOpacity style={styles.addcontainer}>
             <Text style={styles.add}>+Add</Text>
         </TouchableOpacity>
@@ -65,27 +64,23 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     borderColor: '#D0E7D2',
     color:"white",
-    // backgroundColor:"#D0E7D2"
   },
   addcontainer:{
     backgroundColor: "#07411B",
-    // paddingHorizontal: 10,
-    // paddingVertical: 12,
     borderWidth:3,
     borderRadius: 20,
     width: 60,
-    marginRight:-40
+    marginRight:-40,
+    // justifyContent:'right'
   },
   points:{
     borderRadius: 50,
     height:30,
     alignItems: "center",
-    // textAlign:'center',
     justifyContent:'center',
     width: 200,
     marginLeft:80,
     marginTop:40,
-    // borderWidth: 2,
     borderColor: '#D0E7D2',
     backgroundColor:"#D0E7D2",
     flexDirection: 'row',
@@ -113,7 +108,6 @@ const styles = StyleSheet.create({
   },
   profileView: {
     backgroundColor: "#D9D9D9",
-    // backgroundColor:"#C4DFDF",
     width: 300,
     height:180,
     marginTop:-60,
@@ -134,7 +128,6 @@ const styles = StyleSheet.create({
     marginTop:-8,
     fontWeight:'900',
     color:"green",
-    // textDecorationLine:'underline'
   },
   personLocation:{
     fontSize:15,
@@ -150,33 +143,12 @@ const styles = StyleSheet.create({
     marginLeft:80
   },
   pointHeading:{
-    // marginTop:25,
     textAlign:'center',
     justifyContent:'center',
     fontSize:16,
     fontWeight:'900',
     marginRight:10
   }
-  //   progressRing: {
-  //     width: 200,
-  //     height: 200,
-  //     position: "absolute",
-  //     borderWidth: 20,
-  //     borderRadius: 100,
-  //     borderLeftColor: "transparent",
-  //     borderBottomColor: "transparent",
-  //     borderRightColor: "blue",
-  //     borderTopColor: "blue",
-  //   },
-  //   percentRing: {
-  //     height: 200,
-  //     width: 200,
-  //     borderWidth: 20,
-  //     borderColor: "grey",
-  //     borderRadius: 100,
-  //     justifyContent: "center",
-  //     alignItems: "center",
-  //   },
 });
 
 export default ProfilePage;

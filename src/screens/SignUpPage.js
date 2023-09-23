@@ -12,7 +12,7 @@ import { Ionicons } from '@expo/vector-icons';
 const SignUpPage = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
-      <View>
+      <View style={styles.mainContainer}>
         <TouchableOpacity onPress={() => {navigation.goBack()}} style={styles.backButton}>
           <Ionicons name="arrow-back" style={styles.arrow} size={24} color="black" />
           <Text style={styles.back}>Back</Text>
@@ -116,6 +116,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
   },
+  // mainContainer:{
+  //   alignItems: 'center'
+  // },
   arrow:{
     alignSelf:"center",
     color:"green",
@@ -161,16 +164,15 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     color: '#07411B',
     fontWeight:'900',
-    // fontFamily:"Poppins"
   },
   inputWrapper: {
     alignItems: "center",
-    marginLeft: 50,
     marginTop: 40,
+    justifyContent: 'center',
+    alignSelf:'center',
   },
   inpText: {
-    // color: "#34572F",
-    // fontSize: 15,
+
     alignSelf: "flex-start",
     // marginTop: 14,
     marginTop:8,

@@ -13,12 +13,13 @@ const Tab = createBottomTabNavigator();
 const MyTabs = () => {
   return (
       <Tab.Navigator screenOptions={{headerShown: false}}>
-        <Tab.Screen name="ForumPage" component={ForumPage}></Tab.Screen>
+        <Tab.Screen name="EcoSaathiForum" component={ForumPage}></Tab.Screen>
         <Tab.Screen name="EventsPage" component={EventsPage}></Tab.Screen>
         <Tab.Screen name="ProfilePage" component={ProfilePage}></Tab.Screen>
       </Tab.Navigator>
   );
 };
+
 export default function App() {
   return (
     <NavigationContainer>
@@ -29,6 +30,6 @@ export default function App() {
         <Stack.Screen name="MyTabs" component={MyTabs} />
       </Stack.Navigator>
     </NavigationContainer>
-    // <ProfilePage/>
+    
   );
 }
