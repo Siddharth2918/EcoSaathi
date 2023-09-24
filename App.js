@@ -7,6 +7,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import ForumPage from "./src/screens/ForumPage";
 import ProfilePage from "./src/screens/ProfilePage";
 import EventsPage from "./src/screens/EventsPage";
+import SurveyPage from "./src/screens/SurveyPage";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -27,9 +28,9 @@ export default function App() {
         <Stack.Screen name="BasePage" component={BasePage} />
         <Stack.Screen name="SignUpPage" component={SignUpPage} />
         <Stack.Screen name="LogInPage" component={LogInPage} />
+        <Stack.Screen name="SurveyPage" component={SurveyPage}/>
         <Stack.Screen name="MyTabs" component={MyTabs} />
       </Stack.Navigator>
     </NavigationContainer>
-    
   );
 }

@@ -26,7 +26,7 @@ const SignUpPage = ({navigation}) => {
         <TextInput style={styles.input} placeholder="********"/>
       </View>
       <View style={styles.buttonWrapper}>
-        <TouchableOpacity style={styles.appButtonContainer1}>
+        <TouchableOpacity style={styles.appButtonContainer1} onPress={(()=>{navigation.navigate('SurveyPage')})}>
           <Text style={styles.appButtonText}>Sign up with email</Text>
         </TouchableOpacity>
         <View style={styles.loginOption}>
