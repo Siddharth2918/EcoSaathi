@@ -96,13 +96,12 @@ const data = [
 
 const ForumPage = () => {
   return (
-    <ScrollView style={styles.container}>
       <FlatList
         data={data}
         renderItem={({ item }) => <PostComponent username={item.username} caption={item.caption} />}
         keyExtractor={(item) => item.id}
+        style={styles.container}
       />
-    </ScrollView>
   );
 };
 
