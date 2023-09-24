@@ -24,10 +24,10 @@ const MyTabs = () => {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="BasePage" component={BasePage} />
-        <Stack.Screen name="SignUpPage" component={SignUpPage} />
-        <Stack.Screen name="LogInPage" component={LogInPage} />
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="BasePage" component={BasePage}  screenOptions={{ headerShown: false }}/>
+        <Stack.Screen name="SignUpPage" component={SignUpPage} screenOptions={{ headerShown: false }}/>
+        <Stack.Screen name="LogInPage" component={LogInPage} screenOptions={{ headerShown: false }}/>
         <Stack.Screen name="SurveyPage" component={SurveyPage}/>
         <Stack.Screen name="MyTabs" component={MyTabs} />
       </Stack.Navigator>
